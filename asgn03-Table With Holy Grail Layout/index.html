@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Tables & CSS Grid</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <h1>HTML Tables & CSS Grid</h1>
+      <p>Holy Grail layout with an accessible HTML table.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#table">Data Table</a></li>
+        <li><a href="info.php">Accessibility Info (PHP)</a></li>
+      </ul>
+    </nav>
+
+    <main id="table">
+      <h2>Sample Data Table</h2>
+      <table>
+        <caption>Student Project Scores</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Project</th>
+            <th scope="col">Score</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice Johnson</td>
+            <td>Portfolio Website</td>
+            <td>92%</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>Marcus Lee</td>
+            <td>JavaScript Game</td>
+            <td>88%</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>Sophia Nguyen</td>
+            <td>API Dashboard</td>
+            <td>95%</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>Daniel Smith</td>
+            <td>CSS Layout</td>
+            <td>76%</td>
+            <td>Conditional</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <aside>
+      <h2>AI Suggestions</h2>
+      <ul>
+        <li>Use captions and scoped headers</li>
+        <li>Ensure visible focus states</li>
+        <li>Maintain strong color contrast</li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>CSS Grid Holy Grail Layout Example</p>
+    </footer>
+  </div>
+</body>
+</html>
