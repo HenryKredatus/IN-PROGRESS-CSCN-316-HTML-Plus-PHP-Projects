@@ -1,0 +1,75 @@
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Nav Code */
+nav {
+  width: 100vw;
+  height: 75px;
+  background-color: #111;
+  color: #fff;
+  padding: 20px 25px 0 0;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 20px;
+}
+
+nav a:link {
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+
+/* Main Code */
+main {
+  width: 100vw;
+  height: auto;
+  background-color: #ccc;
+  padding: 25px;
+}
+
+main h1 {
+  font-size: 2em;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main table {
+  border: 1px solid #111;
+}
+
+main table tr:nth-child(odd) {
+  background-color: lightyellow;
+}
+
+main table tr:nth-child (even) {
+  background-color: lightblue;
+}
+
+main table tr th {
+  font-size: 1.25em;
+  padding: 10px;
+  border: 1px solid #111;
+}
+
+main table tr td {
+  font-size: 1.25em;
+  padding: 10px;
+  border: 1px solid #111;
+}
+
+/* Footer Code */
+footer {
+  width: 100vw;
+  height: 50px;
+  background-color: ghostwhite;
+  padding: 5px 0 5px 25px;
+}
+
+footer p {
+  font-size: 1.5em;
+}
