@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a2540; /* fallback so no white ever shows */
+  color: #333;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #0a2540;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #4cc9f0;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+  flex: 1;
+  display: flex;
+}
+
+/* ===== HERO PAGE ===== */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem 2rem;
+  text-align: center;
+
+  background: linear-gradient(135deg, #4cc9f0, #4361ee);
+  color: white;
+}
+
+.hero .logo {
+  max-width: 100%;
+  width: 300px;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0a2540;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* ===== CONTENT PAGES (REPORTS) ===== */
+.content {
+  flex: 1;
+  padding: 2rem;
+  background: #f4f6f9;
+  display: block; /* prevents flex from squishing tables */
+}
+
+/* ===== PAGE LOGO (ABOVE PAGE TITLE) ===== */
+.page-logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 220px;
+  max-width: 100%;
+}
+
+/* ===== REPORT SECTIONS ===== */
+.report-section {
+  margin-bottom: 3rem;
+}
+
+/* ===== TABLE WRAPPER (KEY FIX) ===== */
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto; /* prevents overflow off screen */
+}
+
+/* ===== TABLES ===== */
+table {
+  width: 100%;
+  min-width: 600px; /* keeps columns readable */
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #0a2540;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+/* Optional: make numbers easier to read */
+td:last-child {
+  text-align: right;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 1.25rem;
+}
