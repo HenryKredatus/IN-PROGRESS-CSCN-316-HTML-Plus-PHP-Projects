@@ -1,0 +1,179 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+.nav {
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.nav li {
+  margin: 0 15px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  height: 45px;
+}
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+}
+.content-image {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 20px auto;
+}
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: #fafafa;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/about.jpg");
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.about-section {
+  margin: 40px 0;
+}
+
+.about-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.verse-box {
+  background: #f0f0f0;
+  border-left: 5px solid #333;
+  padding: 15px;
+  margin: 15px 0;
+  font-style: italic;
+}
+
+.verse-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.verse-grid .verse-box {
+  flex: 1;
+}
+
+.services-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/services.jpg");
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.service-card {
+  flex: 1;
+  min-width: 250px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.service-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.services-summary {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Small logo for navbar */
+.nav .logo {
+  height: 45px;
+  width: auto;
+}
+
+/* Large logo when used in page content */
+.page-logo {
+  display: block;
+  width: 70%;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.staff-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
