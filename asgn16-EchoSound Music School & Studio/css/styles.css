@@ -1,0 +1,409 @@
+/* =========================================================
+   RESET / BASE
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Segoe UI,
+    sans-serif;
+  background: #0b1020;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================================================
+   LAYOUT CONTAINERS
+========================================================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+  background: rgba(8, 12, 28, 0.95);
+  border-bottom: 2px solid #6d4cff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  padding: 0.5rem 0.9rem;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #6d4cff;
+  transform: translateY(-2px);
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.logo-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  border: 2px dashed #ffffff88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1b2445;
+  color: #ddd;
+  font-size: 0.8rem;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 5.5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.85);
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+  display: inline-block;
+  background: #6d4cff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 40px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #8d73ff;
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+}
+
+/* =========================================================
+   CARDS / GRID SYSTEM
+========================================================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #151c35;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-image {
+  height: 220px;
+  background: #2d3c6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* =========================================================
+   TWO COLUMN LAYOUT
+========================================================= */
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.placeholder-image {
+  min-height: 350px;
+  background: #202b52;
+  border: 3px dashed #ffffff55;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #ffffff22;
+  text-align: left;
+}
+
+th {
+  background: #6d4cff;
+}
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+form {
+  background: #151c35;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #0d1326;
+  color: white;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.error {
+  color: #ff8b8b;
+  margin-top: 0.3rem;
+}
+
+.success-box {
+  background: #1c3b27;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #63d28b;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  background: #060913;
+  padding: 3rem 0;
+  margin-top: 4rem;
+  border-top: 2px solid #6d4cff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  color: #9f8dff;
+}
+
+/* =========================================================
+   PAGE BANNER / UTILITIES
+========================================================= */
+
+.page-banner {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(135deg, #121a33, #24154b);
+  text-align: center;
+}
+
+.highlight {
+  color: #9f8dff;
+}
+
+/* =========================================================
+   IMAGE HELPERS / OVERRIDES
+========================================================= */
+
+.logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.instructor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #2d3c6a;
+  padding: 10px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+  .nav-inner,
+  .nav-links,
+  .two-column {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+  }
+}
+
+/* =========================================================
+   RECORDING STUDIO - CARD IMAGE FIX (PAGE-SPECIFIC)
+========================================================= */
+
+.recording-studio .card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.recording-studio .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* prevents cropping */
+  object-position: center;
+  display: block;
+  background: #151c35; /* blends with card so letterboxing looks clean */
+}
